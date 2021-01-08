@@ -40,3 +40,4 @@ I was looking for some hands-on practice and saw [@christianp86](https://github.
 
 * [James Q Quick](https://www.youtube.com/c/JamesQQuick)
 * [YT-Playlist](https://www.youtube.com/playlist?list=PLDlWc9AfQBfbyGwhSlxg16mQGpGnauCwq)
+* [Original Repository](https://github.com/jamesqquick/Design-and-Build-a-Chat-Application-with-Socket.io)
