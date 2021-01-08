@@ -1,12 +1,23 @@
 {
-  "name": "QuickChat",
+  "name": "quickchat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAPMarco/quickchat.git"
+  },
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Design and Build a Chat App with Socket.io",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startdev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Marco Beier",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

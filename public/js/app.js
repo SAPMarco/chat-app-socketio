@@ -24,10 +24,18 @@ const loginButton = document.getElementById('loginButton');
 const loginWindow = document.getElementById('login');
 
 /**
+ * Initiate WebSocket connection via Socket.io 
+ * (brought in by CDN via index.html script-tag)
+ */
+const socket = io();
+
+/**
  * Application state - 1 item of the array: 
  * {author, date, content, type} 
  */
 const messages = [];
+
+
 
 /**
  * Take in a message object and 
