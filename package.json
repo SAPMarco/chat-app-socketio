@@ -1,5 +1,6 @@
 {
   "name": "quickchat",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/SAPMarco/quickchat.git"
