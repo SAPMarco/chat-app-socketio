@@ -6,9 +6,9 @@
   },
   "version": "1.0.0",
   "description": "Design and Build a Chat App with Socket.io",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
-    "startdev": "nodemon server.js"
+    "startdev": "nodemon server/server.js"
   },
   "keywords": [],
   "author": "Marco Beier",
