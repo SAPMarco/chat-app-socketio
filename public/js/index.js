@@ -71,7 +71,7 @@ createMessageHTML = message => {
             <p class="message-content">${message.content}</p>
         </div>
     `
-}
+};
 
 /**
  * Wrapper function to loop over each message
@@ -84,7 +84,7 @@ const displayMessages = () => {
                             .join('');
 
     messagesList.innerHTML = messagesHTML;
-}
+};
 
 /**
  * Wrapper function for 
@@ -108,11 +108,11 @@ sendButton.addEventListener('click', e => {
     if(!messageInput.value) return;
 
     const date = new Date();
-    const day = date.getDate();
+    const dayString = `0${date.getDate()}`.slice(-2); //add padded 0 (up to 2 digits)
     const year = date.getFullYear();
-    //add padding with 0 (up to 2 digits) and add +1 to 0-based month index
-    const month = ('0' + (date.getMonth() + 1)).slice(-2) 
-    const dateString = `${day}.${month}.${year}`;
+    const month = `0${(date.getMonth() + 1)}`.slice(-2); //add padded 0 (up to 2 digits) & +1 due to 0-based month index
+    const dateString = `${dayString}.${month}.${year}`;
+    
     const message = {
         author: username,
         date: dateString,
@@ -123,7 +123,7 @@ sendButton.addEventListener('click', e => {
 
     //making sure the message entry field is reset
     messageInput.value = '';
-})
+});
 
 /**
  * Logging in

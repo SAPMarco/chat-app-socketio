@@ -10,7 +10,7 @@ const io = new socketServer(http);
 app.use(express.static('public'));
 
 //default get request to base route 'http://localhost:3000/'
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
     res.sendFile('public/index.html');
 });
 
