@@ -17,6 +17,11 @@ I was looking for some hands-on practice and saw [@christianp86](https://github.
         "prefix": "getid",
         "body": "const $1 = document.getElementById('$1');\n$0",
         "description": "Gets DOM element by id"
+    },    
+    "Get Elements by tag": {
+        "prefix": "gettag",
+        "body": "const $1 = document.getElementsByTagName('$2);\n$0",
+        "description": "Gets DOM elements by tagname"
     },
     "Get Elements by class": {
         "prefix": "getclass",
